@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="window">
+    <property name="can-focus">False</property>
+    <property name="default-width">800</property>
+    <property name="default-height">400</property>
+    <child>
+      <object class="GtkFixed" id="fixe">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel" id="l1">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Le client envoie un nombre aléatoire et selon ce nombre le serveur lui répond 
+avec des nombre aléatoires.</property>
+            <attributes>
+              <attribute name="weight" value="medium"/>
+              <attribute name="foreground" value="#4e4e7877aaaa"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">55</property>
+            <property name="y">79</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="l3">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Bienvenue à notre interface de Communication Client Serveur</property>
+            <attributes>
+              <attribute name="style" value="oblique"/>
+              <attribute name="weight" value="heavy"/>
+              <attribute name="foreground" value="#0a7713334e81"/>
+              <attribute name="size" value="13000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">94</property>
+            <property name="y">6</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_pipe">
+            <property name="label" translatable="yes">Tube nommé</property>
+            <property name="width-request">100</property>
+            <property name="height-request">0</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="relief">half</property>
+            <property name="always-show-image">True</property>
+            <signal name="clicked" handler="pipe_button" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">533</property>
+            <property name="y">242</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_tcp">
+            <property name="label" translatable="yes">    Socket   TCP</property>
+            <property name="width-request">100</property>
+            <property name="height-request">0</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="tcp_button" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">525</property>
+            <property name="y">303</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Nombre Clients:</property>
+            <attributes>
+              <attribute name="weight" value="ultrabold"/>
+              <attribute name="foreground" value="#121242427d7d"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">62</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="input_nbr">
+            <property name="width-request">100</property>
+            <property name="height-request">0</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">223</property>
+            <property name="y">189</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Spécifier le type de connexion souhaité au serveur:</property>
+            <attributes>
+              <attribute name="weight" value="ultrabold"/>
+              <attribute name="foreground" value="#121242427d7d"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">63</property>
+            <property name="y">241</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
